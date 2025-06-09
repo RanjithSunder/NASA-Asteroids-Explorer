@@ -20,6 +20,7 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -47,7 +48,6 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-cover/
 
 # Translations
 *.mo
@@ -70,7 +70,6 @@ instance/
 docs/_build/
 
 # PyBuilder
-.pybuilder/
 target/
 
 # Jupyter Notebook
@@ -85,12 +84,6 @@ ipython_config.py
 
 # pipenv
 Pipfile.lock
-
-# poetry
-poetry.lock
-
-# pdm
-.pdm.toml
 
 # PEP 582
 __pypackages__/
@@ -129,32 +122,19 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-.idea/
-
-# VSCode
-.vscode/
-
 # Streamlit
 .streamlit/
 
-# Database credentials and config
+# Database credentials (if you create a separate config file)
 config.py
-database_config.py
-*.env
-.env.local
-.env.production
+.env
 
-# Data files (if large)
-data/*.csv
-data/*.json
-data/*.sql
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # OS generated files
 .DS_Store
@@ -165,11 +145,10 @@ data/*.sql
 ehthumbs.db
 Thumbs.db
 
-# Logs
+# Database files (if using local SQLite for testing)
+*.db
+*.sqlite
+
+# Log files
 *.log
 logs/
-
-# Temporary files
-*.tmp
-*.temp
-*~
