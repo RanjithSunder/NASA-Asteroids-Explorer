@@ -26,7 +26,7 @@ An interactive Streamlit web application for exploring NASA's Near-Earth Object 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/nasa-asteroids-explorer.git
+   git clone https://github.com/RanjithSunder/nasa-asteroids-explorer.git
    cd nasa-asteroids-explorer
    ```
 
@@ -46,8 +46,8 @@ An interactive Streamlit web application for exploring NASA's Near-Earth Object 
    # Create database
    mysql -u root -p
    CREATE DATABASE nasa;
-   CREATE USER 'vmfg'@'localhost' IDENTIFIED BY 'vmfgpwd!';
-   GRANT ALL PRIVILEGES ON nasa.* TO 'vmfg'@'localhost';
+   CREATE USER 'YOUR_USER'@'localhost' IDENTIFIED BY 'YOUR_PASSWORD';
+   GRANT ALL PRIVILEGES ON nasa.* TO 'YOUR_USER'@'localhost';
    FLUSH PRIVILEGES;
    ```
 
@@ -67,34 +67,31 @@ The application expects two main tables:
 #### `asteroids` table
 ```sql
 CREATE TABLE asteroids (
-    id VARCHAR(20) PRIMARY KEY,
-    name VARCHAR(255),
-    estimated_diameter_min_km DECIMAL(10,6),
-    estimated_diameter_max_km DECIMAL(10,6),
-    is_potentially_hazardous_asteroid BOOLEAN,
-    absolute_magnitude_h DECIMAL(8,4)
+    id INT,
+    name VARCHAR(45),
+    absolute_magnitude_h FLOAT,
+    estimated_diameter_min_km FLOAT,
+    estimated_diameter_max_km FLOAT,
+    is_potentially_hazardous_asteroid BOOLEAN
 );
 ```
 
 #### `close_approaches` table
 ```sql
 CREATE TABLE close_approaches (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    neo_reference_id VARCHAR(20),
+    neo_reference_id INT,
     close_approach_date DATE,
-    orbiting_body VARCHAR(50),
-    relative_velocity_kmph DECIMAL(12,2),
-    miss_distance_km DECIMAL(15,2),
-    miss_distance_lunar DECIMAL(10,6),
-    astronomical_au DECIMAL(12,8),
-    FOREIGN KEY (neo_reference_id) REFERENCES asteroids(id)
+    relative_velocity_kmph FLOAT,
+    astronomical_AU FLOAT,
+    miss_distance_km FLOAT,
+    miss_distance_lunar FLOAT,
+    orbiting_body VARCHAR(50)
 );
 ```
 
 ### Data Sources
 
 - **NASA NEO API**: https://api.nasa.gov/neo/
-- **JPL Small-Body Database**: https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html
 
 ## 🔧 Configuration
 
@@ -243,8 +240,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- Create an [Issue](https://github.com/yourusername/nasa-asteroids-explorer/issues) for bug reports
-- Start a [Discussion](https://github.com/yourusername/nasa-asteroids-explorer/discussions) for questions
+- Create an [Issue](https://github.com/RanjithSunder/nasa-asteroids-explorer/issues) for bug reports
+- Start a [Discussion](https://github.com/RanjithSunder/nasa-asteroids-explorer/discussions) for questions
 - Follow the project for updates
 
 ## 🚀 Deployment
