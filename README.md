@@ -123,8 +123,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - your.email@example.com
-Project Link: https://github.com/yourusername/nasa-asteroids-app
+Your Name - ranjithiam23@gmail.com
+Project Link: [https://github.com/RanjithSunder/NASA-Asteroids-Explorer]
 
 ## Changelog
 
