@@ -31,7 +31,7 @@ A Streamlit web application for exploring NASA's asteroid database with interact
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/nasa-asteroids-app.git
+   git clone https://github.com/RanjithSunder/NASA-Asteroids-Explore.git
    cd nasa-asteroids-app
    ```
 
