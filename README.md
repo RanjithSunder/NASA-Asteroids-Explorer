@@ -108,7 +108,6 @@ The application expects two main tables:
 
 This application is designed to work with NASA's Near Earth Object Web Service (NeoWs) data. You can obtain asteroid data from:
 - [NASA NeoWs API](https://api.nasa.gov/)
-- [NASA JPL Small-Body Database](https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html)
 
 ## Contributing
 
