@@ -11,13 +11,21 @@ A Streamlit web application for exploring NASA's asteroid database with interact
 - 🔄 **Data Fetcher**: Automated NASA API data collection and database population
 
 ## Screenshots
-📊 **Dashboard**:
+
+## 📊 **Dashboard**:
+
 ![image](https://github.com/user-attachments/assets/ae5e375c-a5e2-4f5c-9cca-5b52a780dc5e)
-🔍 **Quick Queries**:
+
+## 🔍 **Quick Queries**:
+
 ![image](https://github.com/user-attachments/assets/2259498c-e839-4627-9f09-7a5691f5e2a8)
-🎯 **Custom Search**:
+
+## 🎯 **Custom Search**:
+
 ![image](https://github.com/user-attachments/assets/a2957bda-8674-4a9c-b21d-6b3859c019e2)
-📈 **Charts**: 
+
+## 📈 **Charts**: 
+
 ![image](https://github.com/user-attachments/assets/53eb7f6a-94c7-445b-828e-49906f8b2b3e)
 
 *Dashboard overview with key metrics*
